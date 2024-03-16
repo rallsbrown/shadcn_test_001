@@ -17,14 +17,18 @@ import {
   DropdownMenuRadioGroup,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const DropDown = () => {
   return (
-    <div className="flex w-full flex-row items-start justify-start">
+    <div>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button className="w-[300px]" variant="outline">
-            Open
+          <Button className="h-10 w-10 rounded-full" variant="outline">
+            <Avatar>
+              <AvatarImage src={"../public/images/avatar_1.jpg"} />
+              <AvatarFallback>RB</AvatarFallback>
+            </Avatar>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56">
