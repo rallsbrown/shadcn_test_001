@@ -206,12 +206,16 @@ const CarouselDots = React.forwardRef<
 >((props, ref) => {
   const { dotClassName, dotCurrentClassName } = props;
   const { api } = useCarousel();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [updateState, setUpdateState] = React.useState(false);
   const toggleUpdateState = React.useCallback(
     () => setUpdateState((prevState) => !prevState),
     [],
   );
+
+  //dummy to prevent error, need to fix for real later
+  React.useEffect(() => {
+    console.log("hello");
+  }, [updateState]);
 
   React.useEffect(() => {
     if (api) {
