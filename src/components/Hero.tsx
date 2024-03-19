@@ -1,5 +1,4 @@
 import { PlayIcon } from "@radix-ui/react-icons";
-import React from "react";
 import { Button } from "./ui/button";
 
 const Hero = () => {
