@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 const Hero = () => {
   return (
     <div className="hero mb-14 mt-4 flex h-[750px] w-full flex-col items-center bg-gray-200 max-sm:h-[450px] max-sm:px-7">
-      <div className="hero-content mt-[110px] flex flex-col items-center justify-center">
+      <div className="hero-content mt-[220px] flex flex-col items-center justify-center max-sm:mt-[110px]">
         <Button className="flex h-28 w-28 items-center justify-center rounded-full bg-black max-sm:h-20 max-sm:w-20">
           <PlayIcon className="h-14 w-14 text-gray-200 max-sm:h-12 max-sm:w-12" />
         </Button>
