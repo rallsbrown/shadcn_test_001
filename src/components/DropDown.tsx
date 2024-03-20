@@ -28,7 +28,7 @@ const DropDown = () => {
         <DropdownMenuTrigger asChild>
           <Button className="h-10 w-10 rounded-full" variant="outline">
             <Avatar>
-              <AvatarImage src={"../public/images/avatar_1.jpg"} />
+              <AvatarImage src={"/images/avatar_1.jpg"} />
               <AvatarFallback>RB</AvatarFallback>
             </Avatar>
           </Button>
