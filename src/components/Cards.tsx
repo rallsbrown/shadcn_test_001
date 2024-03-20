@@ -51,7 +51,7 @@ const Cards = () => {
                   {images.map((img, index) => (
                     <CarouselItem key={index}>
                       <div className="h-40 w-full p-0">
-                        <img src={`../public/images/${img.url}`} />
+                        <img src={`/images/${img.url}`} />
                       </div>
                     </CarouselItem>
                   ))}
